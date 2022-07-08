@@ -6,10 +6,14 @@ import PropTypes from 'prop-types';
  * @param {*} param0
  * @returns
  */
-function IconWithText({ label, icon, section, key }) {
+function IconWithText({ label, icon, section, key, setSection }) {
 	return (
-		<div className='flex flex-col cursor-pointer' key={key}>
-			<div className={`w-full h-4 ${section && 'bg-emerald-400'}`} />
+		<div
+			className='flex flex-col cursor-pointer'
+			key={key}
+			onClick={() => setSection(label)}
+		>
+			<div className={`w-full h-4 ${section === label && 'bg-emerald-400'}`} />
 			<div className='mx-auto'>{icon}</div>
 			<p className='text-center text-slate-50 text-sm md:text-md lg:text-lg'>
 				{label}
@@ -27,6 +31,8 @@ IconWithText.propTypes = {
 	section: PropTypes.bool,
 	/* key of the container */
 	key: PropTypes.number,
+	/* function that changes the value of section */
+	setSection: PropTypes.func,
 };
 
 export default IconWithText;

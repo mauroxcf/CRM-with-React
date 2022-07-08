@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Contact from './Contact';
 
 /**
  * @description Render a different section between contacts, task and commentary.
@@ -9,11 +10,11 @@ import PropTypes from 'prop-types';
 function MainSection({ section }) {
 	function renderSwitch(section) {
 		switch (section) {
-			case 'Lista de contactos':
-				return <div>Nuevo Contacto</div>;
-			case 'Datos de contacto':
+			case 'Contactos':
+				return <Contact />;
+			case 'Tareas':
 				return <div>Datos de contacto</div>;
-			case 'Ver comentarios':
+			case 'Comentarios':
 				return <div>Ver comentarios</div>;
 			default:
 				break;
