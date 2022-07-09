@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SearchBar from '../../Components/organism/SearchBar';
 import ContactList from '../../Components/organism/ContactList';
 import { ReactComponent as UserPlus } from '../../Assets/Icons/user-plus.svg';
@@ -9,11 +8,97 @@ import { ReactComponent as UserPlus } from '../../Assets/Icons/user-plus.svg';
  * @param {*} param0
  * @returns
  */
-function Contact(props) {
+function Contact() {
+	const data = [
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+		{
+			id: 1,
+			firstName: 'Mauricio Javier',
+			lastName: 'Contreras Fernandez',
+			number: 3001122331,
+			numberExt: 57,
+		},
+	];
 	return (
 		<div className='flex flex-col md:h-full w-full mx-auto gap-6 pt-8'>
 			<SearchBar />
-			<ContactList />
+			<ContactList contactData={data} />
 			<div className='w-28 h-8 flex flex-row justify-center items-center gap-2 bg-blue-900 rounded-2xl mx-auto'>
 				<p className='text-slate-50 text-md'>Agregar</p>
 				<UserPlus stroke='white' />
@@ -21,7 +106,5 @@ function Contact(props) {
 		</div>
 	);
 }
-
-Contact.propTypes = {};
 
 export default Contact;
