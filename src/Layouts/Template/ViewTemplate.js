@@ -11,8 +11,8 @@ import FooterNavbar from '../Footer/FooterNavbar';
  */
 function ViewTemplate({ section, setSection, children }) {
 	return (
-		<body className='container min-h-screen absolute top-0 min-w-full md:overflow-x-hidden'>
-			<main className='pt-8'>{children}</main>
+		<body className='container flex absolute top-0 min-w-full min-h-screen overflow-hidden'>
+			<main className='flex w-full pb-20'>{children}</main>
 			<FooterNavbar section={section} setSection={setSection} />
 		</body>
 	);
