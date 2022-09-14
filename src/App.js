@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import MainSection from './Layouts/Main/MainSection';
-import ViewTemplate from './Layouts/Template/ViewTemplate';
+import CreateContact from './Pages/CreateContact';
+import UpdateContact from './Pages/UpdateContact';
 
 function App() {
-	const [section, setSection] = useState('Contactos');
 	return (
-		<ViewTemplate section={section} setSection={setSection}>
-			<MainSection section={section} />
-		</ViewTemplate>
+		<Routes>
+			<Route path='/' element={<MainSection />} />
+			<Route path='/create_contact' element={<CreateContact />} />
+			<Route path='/update_contact/:id' element={<UpdateContact />} />
+		</Routes>
 	);
 }
 

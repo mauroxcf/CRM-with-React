@@ -1,0 +1,88 @@
+const dummyData = [
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+	{
+		id: 1,
+		firstName: 'Mauricio Javier',
+		lastName: 'Contreras Fernandez',
+		number: 3001122331,
+		numberExt: 57,
+	},
+];
+
+export { dummyData };

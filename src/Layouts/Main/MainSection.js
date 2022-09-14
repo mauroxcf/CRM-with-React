@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Contact from './Contact';
+import { useState } from 'react';
+import ViewTemplate from '../Template/ViewTemplate';
 
 /**
  * @description Render a different section between contacts, task and commentary.
  * @param {*} param0
  * @returns
  */
-function MainSection({ section }) {
+function MainSection() {
+	const [section, setSection] = useState('Contactos');
 	function renderSwitch(section) {
 		switch (section) {
 			case 'Contactos':
@@ -20,7 +23,11 @@ function MainSection({ section }) {
 				break;
 		}
 	}
-	return <>{renderSwitch(section)}</>;
+	return (
+		<ViewTemplate section={section} setSection={setSection}>
+			{renderSwitch(section)}
+		</ViewTemplate>
+	);
 }
 
 MainSection.propTypes = {

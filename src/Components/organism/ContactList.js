@@ -4,6 +4,7 @@ import NameWithNumber from '../molecule/NameWithNumber';
 import { ReactComponent as Pencil } from '../../Assets/Icons/pencil.svg';
 import { ReactComponent as Trash } from '../../Assets/Icons/trash.svg';
 import { ReactComponent as CirclePlus } from '../../Assets/Icons/circlePlus.svg';
+import { Link } from 'react-router-dom';
 
 /**
  * @description Render a list of contact from the database.
@@ -27,7 +28,9 @@ function ContactList({ contactData }) {
 							/>
 						</div>
 						<div className='w-2/5 flex flex-row justify-between items-center'>
-							<Pencil stroke='#4432a8' />
+							<Link to={`/update_contact/${singleContact.id}`}>
+								<Pencil stroke='#4432a8' />
+							</Link>
 							<CirclePlus stroke='#4432a8' />
 							<Trash stroke='#4432a8' />
 						</div>
