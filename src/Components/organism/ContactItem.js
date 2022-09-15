@@ -36,7 +36,7 @@ function ContactItem({ singleContact }) {
 	}, [showModal]);
 
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col gap-1'>
 			<div className='flex flex-row gap-1'>
 				<div className='w-3/5'>
 					<NameWithNumber
@@ -59,9 +59,8 @@ function ContactItem({ singleContact }) {
 					/>
 					<Trash className='cursor-pointer' stroke='#4432a8' />
 				</div>
-
-				<hr />
 			</div>
+			<hr className='border-2 border-white' />
 			{showModal && (
 				<Modal>
 					{modalOptions.map((option, index) => (

@@ -23,22 +23,33 @@ const modalOptions = [
 ];
 
 const formInitialValues = {
-	name: '',
-	last_name: '',
+	firstName: '',
+	lastName: '',
 	email: '',
-	phone: '',
+	number: '',
 	birthday: '',
 	address: '',
 	type_contact: '',
 	origin: '',
 };
 
+const formInitialValuesEdit = {
+	firstName: 'Mauricio Javier',
+	lastName: 'Contreras Fernandez',
+	email: 'maurodev@gmail.com',
+	number: '3001122331',
+	birthday: '1990-01-01',
+	address: 'neverland',
+	type_contact: 'one',
+	origin: 'one',
+};
+
 const formValidationSchema = Yup.object().shape({
-	name: Yup.string()
+	firstName: Yup.string()
 		.min(2, 'Too Short!')
 		.max(50, 'Too Long!')
 		.required('Required'),
-	last_name: Yup.string()
+	lastName: Yup.string()
 		.min(2, 'Too Short!')
 		.max(50, 'Too Long!')
 		.required('Required'),
@@ -47,7 +58,7 @@ const formValidationSchema = Yup.object().shape({
 		.min(2, 'Too Short!')
 		.max(50, 'Too Long!')
 		.required('Required'),
-	phone: Yup.number().required('Required'),
+	number: Yup.number().required('Required'),
 	birthday: Yup.date(),
 	address: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
 	type_contact: Yup.string()
@@ -60,4 +71,10 @@ const formValidationSchema = Yup.object().shape({
 		.required('Required'),
 });
 
-export { navbarLabels, modalOptions, formInitialValues, formValidationSchema };
+export {
+	navbarLabels,
+	modalOptions,
+	formInitialValues,
+	formValidationSchema,
+	formInitialValuesEdit,
+};
