@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Contact from '../Layouts/Main/Contact';
 import { useState } from 'react';
 import ViewTemplate from '../Layouts/Template/ViewTemplate';
+import Task from '../Layouts/Main/Task';
+import Comments from '../Layouts/Main/Comments';
 
 /**
  * @description Render a different section between contacts, task and commentary.
@@ -16,9 +18,9 @@ function MainSection() {
 			case 'Contactos':
 				return <Contact />;
 			case 'Tareas':
-				return <div>Datos de contacto</div>;
+				return <Task />;
 			case 'Comentarios':
-				return <div>Ver comentarios</div>;
+				return <Comments />;
 			default:
 				break;
 		}
