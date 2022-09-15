@@ -1,3 +1,7 @@
+//Validation library
+import * as Yup from 'yup';
+
+//SVG
 import { ReactComponent as User } from '../Assets/Icons/user.svg';
 import { ReactComponent as Commentary } from '../Assets/Icons/message.svg';
 import { ReactComponent as Task } from '../Assets/Icons/file-check.svg';
@@ -18,4 +22,42 @@ const modalOptions = [
 	{ label: 'Mensaje por whatsapp', icon: <Whatsapp /> },
 ];
 
-export { navbarLabels, modalOptions };
+const formInitialValues = {
+	name: '',
+	last_name: '',
+	email: '',
+	phone: '',
+	birthday: '',
+	address: '',
+	type_contact: '',
+	origin: '',
+};
+
+const formValidationSchema = Yup.object().shape({
+	name: Yup.string()
+		.min(2, 'Too Short!')
+		.max(50, 'Too Long!')
+		.required('Required'),
+	last_name: Yup.string()
+		.min(2, 'Too Short!')
+		.max(50, 'Too Long!')
+		.required('Required'),
+	email: Yup.string()
+		.email('Invalid email')
+		.min(2, 'Too Short!')
+		.max(50, 'Too Long!')
+		.required('Required'),
+	phone: Yup.number().required('Required'),
+	birthday: Yup.date(),
+	address: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
+	type_contact: Yup.string()
+		.min(2, 'Too Short!')
+		.max(50, 'Too Long!')
+		.required('Required'),
+	origin: Yup.string()
+		.min(2, 'Too Short!')
+		.max(50, 'Too Long!')
+		.required('Required'),
+});
+
+export { navbarLabels, modalOptions, formInitialValues, formValidationSchema };

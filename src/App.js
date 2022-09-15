@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import MainSection from './Layouts/Main/MainSection';
+import MainSection from './Pages/MainSection';
 import CreateContact from './Pages/CreateContact';
 import UpdateContact from './Pages/UpdateContact';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Contact from './Contact';
+import Contact from '../Layouts/Main/Contact';
 import { useState } from 'react';
-import ViewTemplate from '../Template/ViewTemplate';
+import ViewTemplate from '../Layouts/Template/ViewTemplate';
 
 /**
  * @description Render a different section between contacts, task and commentary.
