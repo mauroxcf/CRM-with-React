@@ -18,10 +18,9 @@ function FooterNavbar({ section, setSection }) {
 		<nav className='fixed bottom-0 left-0 right-0 h-20 bg-blue-900 w-full rounded-t-3xl z-20'>
 			<div className='flex flex-row justify-between mx-auto w-3/5'>
 				{navbarLabels.map((item, index) => (
-					<Link to={item.url}>
+					<Link to={item.url} key={index}>
 						<IconWithText
 							label={item.label}
-							key={index}
 							icon={item.icon}
 							section={section}
 							setSection={setSection}

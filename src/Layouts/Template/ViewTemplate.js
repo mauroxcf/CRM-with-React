@@ -11,10 +11,10 @@ import FooterNavbar from '../Footer/FooterNavbar';
  */
 function ViewTemplate({ section, setSection, children }) {
 	return (
-		<body className='container flex absolute top-0 min-w-full min-h-screen overflow-hidden'>
-			<main className='flex w-full pb-20'>{children}</main>
+		<main className='container flex absolute top-0 min-w-full min-h-screen overflow-hidden'>
+			<div className='flex w-full pb-20'>{children}</div>
 			<FooterNavbar section={section} setSection={setSection} />
-		</body>
+		</main>
 	);
 }
 

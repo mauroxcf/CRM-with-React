@@ -6,11 +6,10 @@ import PropTypes from 'prop-types';
  * @param {*} param0
  * @returns
  */
-function IconWithText({ label, icon, section, key, setSection }) {
+function IconWithText({ label, icon, section, setSection }) {
 	return (
 		<div
 			className='flex flex-col cursor-pointer'
-			key={key}
 			onClick={() => setSection(label)}
 		>
 			<div className={`w-full h-4 ${section === label && 'bg-emerald-400'}`} />
@@ -28,9 +27,7 @@ IconWithText.propTypes = {
 	/* icon svg to render */
 	icon: PropTypes.element,
 	/* turn on a green color if the section is selected */
-	section: PropTypes.bool,
-	/* key of the container */
-	key: PropTypes.number,
+	section: PropTypes.string,
 	/* function that changes the value of section */
 	setSection: PropTypes.func,
 };
