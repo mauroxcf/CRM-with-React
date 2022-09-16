@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
  */
 function Contact() {
 	return (
-		<div className='flex flex-col md:h-full w-full mx-auto gap-6 pt-8'>
+		<div className='flex flex-col md:h-full w-full mx-auto gap-6 pt-8 pb-4'>
 			<SearchBar />
 			<ContactList contactData={dummyData} />
 			<Link to='/create_contact'>

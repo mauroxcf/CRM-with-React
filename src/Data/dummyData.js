@@ -5,6 +5,29 @@ const dummyData = [
 		lastName: 'Contreras Fernandez',
 		number: 3001122331,
 		numberExt: 57,
+		email: 'maurodev@gmail.com',
+		address: 'Barranquilla',
+		country: 'Colombia',
+		gender: 'Hombre',
+		birthday: '1990-01-01',
+		type_contact: 'one',
+		origin: 'one',
+		comment: [
+			{ date: '2022-01-01', message: 'esto es un mensaje' },
+			{ date: '2022-01-01', message: 'esto es un mensaje' },
+		],
+		task: [
+			{
+				date: '2022-01-01',
+				crm: 'mensaje crm',
+				responsible: 'mensaje responsable',
+			},
+			{
+				date: '2022-01-01',
+				crm: 'mensaje crm',
+				responsible: 'mensaje responsable',
+			},
+		],
 	},
 	{
 		id: 1,
